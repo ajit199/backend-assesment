@@ -1,10 +1,10 @@
 const { Router } = require("express");
-import {
+const {
   loginUser,
   logoutUser,
   registerUser,
-} from "../controllers/user.controller.js";
-import { verifyJWT } from "../middlewares/auth.middleware.js";
+} = require("../controllers/user.controller.js");
+const { verifyJWT } = require("../middlewares/auth.middleware.js");
 
 const router = Router();
 

@@ -3,7 +3,7 @@ const asyncHandler = require("../utils/asyncHandler.js");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user.model.js");
 
-export const verifyJWT = asyncHandler(async (req, _, next) => {
+exports.verifyJWT = asyncHandler(async (req, _, next) => {
   try {
     const token =
       req.cookies?.accessToken ||
