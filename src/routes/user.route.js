@@ -4,7 +4,7 @@ const {
   logoutUser,
   registerUser,
 } = require("../controllers/user.controller.js");
-const { verifyJWT } = require("../middlewares/auth.middleware.js");
+const verifyJWT = require("../middlewares/auth.middleware.js");
 
 const router = Router();
 
